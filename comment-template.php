@@ -45,12 +45,6 @@ function comment_cp( $comment, $args, $depth ) {
 				<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'alienship' ); ?></p>
 				<?php endif; ?>
 			</div><!-- .comment-content -->		
-            <div class="panel-footer comment_actions_cp">
-                <ul class="nav nav-pills">
-                     
-                    <?php do_action('comment_actions_cp'); ?>
-                </ul>
-            </div>
 		</div><!-- .comment-body -->
         <?php
             comment_reply_link( array_merge( $args, array(
