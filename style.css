@@ -1,0 +1,36 @@
+
+#wp-comment-wrap {
+	border-color: rgba(0, 0, 0, 0.2);
+border-width: 1px;
+border-style: dashed;
+padding: 5px;
+margin: 5px 0px;
+}
+
+.comment {
+	padding: 10px;
+}
+
+.comment.even {
+	background-color: ghostwhite;
+}
+
+.comment_actions_cp .nav>li>a {
+padding: 1px 15px;
+}
+
+.comment_actions_cp {
+	visibility: hidden;
+}
+
+.comment:hover .comment_actions_cp {
+	visibility: visible;
+}
+
+.comment p {
+margin: 0 0 10px;
+}
+
+#respond .wp-switch-editor {
+	height: 26px;
+}
