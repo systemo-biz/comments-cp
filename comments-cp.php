@@ -7,9 +7,9 @@ Version: 0.1
 License: GPL
 Author: CasePress
 Author URI: http://casepress.org
+GitHub Plugin URI: https://github.com/systemo-biz/comments-cp
+GitHub Branch: master
 
-=== RELEASE NOTES ===
-2014-08-30 - v1.0 - first version
 */
 
 /* 
