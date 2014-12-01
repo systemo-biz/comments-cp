@@ -3,7 +3,7 @@
 Plugin Name: Comments by CasePress
 Plugin URI: http://casepress.org
 Description: Добавляем комментарии со своим шаблоном
-Version: 20141027
+Version: 20141201
 License: GPL
 Author: CasePress
 Author URI: http://casepress.org
