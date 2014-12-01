@@ -1,5 +1,30 @@
 <?php
 
+
+
+add_action('wp_head', 'ctrlenterpublishescomment');
+ 
+function ctrlenterpublishescomment() { ?>
+    <script>
+        window.onload = function () {
+            document.getElementById("commentform").onkeydown = function (e) {
+                if (e.keyCode == 13 && e.ctrlKey) { // keyCode 13 is Enter
+                    document.getElementById("submit").click(); // submit the form by hitting ctrl + enter
+                    // alert(e.keyCode); // to know other keyCodes of each keys
+                    return false; // preventing default action
+                }
+                if (e.keyCode == 13 && e.metaKey) { // keyCode 13 is Enter
+                    document.getElementById("submit").click(); // submit the form by hitting cmd + enter
+                    // alert('test'); // to know other keyCodes of each keys
+                    return false; // preventing default action
+                }
+            }
+        }
+    </script>
+<?php 
+}
+
+
 //Свой волкер для списка комментов
 // В будущем нужно будет его дописать так, чтобы комменты были двухуровневые как на Тостере и Енвато
 class Walker_Comment_CP extends Walker_Comment {
